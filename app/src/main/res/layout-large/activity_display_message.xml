@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tbg.bitpaypos.app.DisplayMessageActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:text = "@string/payment_message"
+        android:id="@+id/payment_message"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/order_price"
+        android:id="@+id/order_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_below="@id/payment_message"
+        />
+    <ImageView
+        android:id="@+id/qrImg"
+        android:contentDescription="QR code with payment information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/order_info"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text =""
+        android:layout_below="@id/qrImg"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nfcResponse"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:id="@+id/Refund"
+        android:layout_below="@id/qrImg"
+        android:layout_marginTop="275dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="refundOrder"
+        android:text="Refund Order"
+        />
+
+</RelativeLayout>

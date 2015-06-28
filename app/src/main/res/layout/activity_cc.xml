@@ -1,0 +1,94 @@
+<!--
+  ~ Copyright (c) 2014. Joseph Krug & TBG/Simplybit
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tbg.bitpaypos.app.CCActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/credit_info"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:text="Please input CC info or tap with contactless card"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/credit_info"
+        android:ems="10"
+        android:id="@+id/editCardNum"
+        android:hint="      Input CC Number"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="3"
+        android:id="@+id/CVC"
+        android:hint="CVC"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/editCardNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/CVC"
+        android:ems="6"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/cardMonth"
+        android:hint=" Exp. Month"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/cardMonth"
+        android:ems="5"
+        android:id="@+id/cardYear"
+        android:hint=" Exp. Year"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:id="@+id/credit_submit"
+        android:layout_below="@id/cardYear"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitPayment"
+        android:text="Pay"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip">
+     
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"/>
+     
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="@string/app_info"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/editSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:ems="10" >
+
+            
+        </EditText>
+         
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         
+        		<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:text="@string/start_recording"
+                android:layout_weight="1.0"/>
+				
+        		<Button
+        		android:id="@+id/btnSend"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        	    android:layout_weight="1.0"
+        		android:text="@string/clear_content" />
+        		
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStop"
+                android:text="@string/stop_recording"
+                android:layout_weight="1.0"/>
+    </LinearLayout>
+</LinearLayout>

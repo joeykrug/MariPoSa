@@ -1,0 +1,227 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tbg.bitpaypos.app.SettingsActivity">
+
+
+    <Switch
+        android:id="@+id/bt_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/myBtDevName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@id/bt_toggle"
+        android:layout_alignRight="@id/bt_toggle"
+        android:text="@string/bt_device_name"/>
+
+    <Switch
+        android:id="@+id/usePin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/pinInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@id/usePin"
+        android:text="Use a pin #"/>
+
+    <Button
+        android:id="@+id/bt_pick_device"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/bt_toggle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:text="@string/pick_remote_device"
+        android:onClick="pickDevice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apikeytopb"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/bt_pick_device"
+        android:text="Bitpay API Key"/>
+
+    <EditText
+        android:layout_height = "50dp"
+        android:id="@+id/api_key"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/apikeytopb"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/api_key"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_keyBitPay"
+        android:layout_below="@id/api_key"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="usingBitPay"
+        android:textColor="@android:color/white"
+        android:text="Use BitPay"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/api_key_coinbase"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/api_keyBitPay"
+        android:text="Coinbase API Key"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_key_coinbase_text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/api_key_coinbase"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter Your Coinbase API Key"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_secret_coinbase_text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/api_key_coinbase_text"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your Coinbase API Secret"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_keyCoinbase"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/api_secret_coinbase_text"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="usingCoinbase"
+        android:text="Use Coinbase"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/api_key_gocoin"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/api_keyCoinbase"
+        android:text="Gocoin API Key"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_key_gocoin_text"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/gocoinMerchantID"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter Your GoCoin API Key"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/api_key_gocoin"
+        android:id="@+id/gocoinMerchantID"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter your GoCoin Merchant ID"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/api_keyGocoin"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/api_key_gocoin_text"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="usingGocoin"
+        android:text="Use Gocoin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/info_Personal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/api_keyGocoin"
+        android:text="Personal Wallet"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/info_Personal"
+        android:id="@+id/publicAddress"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Enter your wallet's public address"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@id/info_Personal"
+        android:layout_alignLeft="@+id/info_Personal"
+        android:id="@+id/scanQR"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:text="Scan QR"
+        android:onClick="scanQR"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/personal_Wallet"
+        android:layout_below="@id/publicAddress"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="usingPersonal"
+        android:text="Use Personal Wallet"
+        />
+
+</RelativeLayout>
+</ScrollView>

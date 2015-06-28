@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tbg.bitpaypos.app.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/Refund"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="750dp"
+        android:textColor="@android:color/white"
+        android:onClick="refundLastOrder"
+        android:text="Refund Last Coinbase Payment"
+        />
+
+    <EditText
+        android:layout_height = "50dp"
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/edit_message" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edit_price"
+        android:layout_below="@id/edit_message"
+        android:layout_marginTop="25dp"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/edit_price" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/submit"
+        android:layout_height="58dp"
+        android:layout_below="@id/edit_price"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"
+        android:text="Bitcoin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:id="@+id/credit_card"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:onClick="usingCC"
+        android:text="Credit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/learnBtcTextQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/credit_card"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:text="Interested in learning about bitcoin?"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/learnBtcText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/learnBtcTextQuestion"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:text="Tap for NFC or scan below"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/learnAboutBtc"
+        android:layout_below="@id/learnBtcText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        />
+
+</RelativeLayout>

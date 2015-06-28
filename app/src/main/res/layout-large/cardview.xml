@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="357dp"
+                android:layout_height="221.74dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cardview_relativeLayout_root">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1234"
+            android:id="@+id/cardview_textView_account_number"
+            android:textSize="19pt"
+            android:paddingTop="31dp" android:layout_below="@+id/cardview_textView_brand"
+            android:paddingLeft="16.22dp" android:typeface="normal" android:fontFamily="sans-serif-thin"
+            android:layout_toRightOf="@+id/cardview_textView_asterix_third" android:textStyle="italic"
+            android:textColor="#ffffff"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015/01/30"
+            android:id="@+id/cardview_textView_expiry_to"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_toRightOf="@+id/cardview_textView_valid_from_label"
+            android:layout_alignTop="@+id/cardview_textView_preferred_name" android:textSize="6pt"
+            android:fontFamily="sans-serif-light" android:paddingLeft="45dp" android:textColor="#ffffff"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sears"
+            android:id="@+id/cardview_textView_preferred_name"
+            android:layout_alignParentLeft="true" android:layout_below="@+id/cardview_textView_brand_label"
+            android:textSize="6pt" android:textStyle="normal" android:fontFamily="sans-serif-light"
+            android:paddingLeft="16.95dp" android:textColor="#ffffff"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRST LAST"
+            android:id="@+id/cardview_textView_cardholder"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true" android:layout_below="@+id/cardview_textView_cardholder_name_label"
+            android:paddingLeft="16.95dp" android:singleLine="false" android:textSize="8pt"
+            android:fontFamily="sans-serif-thin" android:textColor="#ffffff"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_imageView_logo" android:layout_alignParentLeft="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Type"
+            android:id="@+id/cardview_textView_brand" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:singleLine="false" android:textSize="11pt" android:typeface="sans" android:textStyle="bold|italic"
+            android:paddingLeft="22.2dp" android:paddingTop="15dp" android:textColor="#ffffff"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****"
+            android:id="@+id/cardview_textView_asterix"
+            android:layout_alignParentTop="false" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cardview_textView_brand" android:typeface="normal" android:textSize="15pt"
+            android:paddingLeft="18.78dp" android:paddingTop="40dp" android:fontFamily="sans-serif-light"
+            android:textStyle="normal" android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="****"
+              android:id="@+id/cardview_textView_asterix_second"
+              android:typeface="normal" android:textSize="15pt" android:paddingLeft="18.78dp"
+              android:paddingTop="40dp" android:fontFamily="sans-serif-light" android:textStyle="normal"
+              android:layout_toRightOf="@+id/cardview_textView_asterix"
+              android:layout_below="@+id/cardview_textView_brand" android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="****"
+              android:id="@id/cardview_textView_asterix_third"
+              android:typeface="normal" android:textSize="15pt" android:paddingLeft="18.78dp"
+              android:paddingTop="40dp" android:fontFamily="sans-serif-light" android:textStyle="normal"
+              android:layout_toRightOf="@+id/cardview_textView_asterix_second"
+              android:layout_below="@+id/cardview_textView_brand"
+              android:textColor="#ffffff"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARDHOLDER NAME"
+            android:id="@+id/cardview_textView_cardholder_name_label" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cardview_textView_asterix" android:paddingLeft="16.95dp"
+            android:textStyle="italic" android:textSize="4pt" android:fontFamily="sans-serif-light"
+            android:paddingTop="13dp" android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BRAND"
+              android:id="@+id/cardview_textView_brand_label"
+              android:paddingLeft="16.95dp"
+              android:textStyle="italic" android:textSize="4pt" android:fontFamily="sans-serif-light"
+              android:layout_below="@+id/cardview_textView_cardholder" android:singleLine="true"
+              android:layout_alignParentLeft="false" android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VALID FROM"
+              android:id="@+id/cardview_textView_valid_from_label" android:paddingLeft="45dp" android:textStyle="italic"
+              android:textSize="4pt" android:fontFamily="sans-serif-light"
+              android:singleLine="true" android:layout_toRightOf="@+id/cardview_textView_brand_label"
+              android:layout_below="@+id/cardview_textView_cardholder" android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2012/01/25"
+              android:id="@+id/cardview_textView_expiry_from"
+              android:textSize="6pt"
+              android:textStyle="normal" android:fontFamily="sans-serif-light" android:paddingLeft="45dp"
+              android:layout_alignParentLeft="false"
+              android:layout_below="@+id/cardview_textView_valid_from_label" android:layout_toRightOf="@+id/cardview_textView_brand_label"
+              android:textColor="#ffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TO"
+              android:id="@+id/cardview_textView_to_label" android:paddingLeft="45dp" android:textStyle="italic"
+              android:textSize="4pt" android:fontFamily="sans-serif-light" android:singleLine="true"
+              android:layout_toRightOf="@+id/cardview_textView_valid_from_label"
+              android:layout_below="@+id/cardview_textView_cardholder" android:textColor="#ffffff"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_imageView_close"
+            android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:src="@drawable/ic_content_remove"/>
+</RelativeLayout>

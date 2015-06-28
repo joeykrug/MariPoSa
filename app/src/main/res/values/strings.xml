@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_">mariPoSa</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter Order ID:</string>
+    <string name="edit_price">Enter Price</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_display_message">Send Payment</string>
+    <string name="payment_message">Scan, tap, or beam (ble) to pay</string>
+    <string name="title_activity_display_confirmation">Payment Confirmed</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="api_key">Enter Your BitPay API Key</string>
+    <string name="payment_confirmed">Payment Confirmed!</string>
+    <string name="order_price">""</string>
+    <string name="title_activity_cc">CC Payments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">mariPoSa</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sound_recording_example2">NFSound</string>
+    <string name="bt_device_name">Bluetooth</string>
+    <string name="pick_remote_device">Connect to Remote Device</string>
+    <string name="type_your_message_here">Type your message here</string>
+    <string name="send">Send</string>
+    <string name="message_appears_here">Messages appear here</string>
+    <string name="choose_device">Choose Remote Device</string>
+    <string name="status">Status</string>
+    <string name="app_info"> NFSound (Near Field Sound) is a simple app that allows 2+ phones to exchange data over sound\n\nPress\&quot;Receive\&quot; button to get data\n\nType anything in the inputbox and press \&quot;Send\&quot; button to send data</string>
+    <string name="choose_format_title">Choose Audio Format</string>
+    <string name="start_recording">Receive</string>
+    <string name="clear_content">Send</string>
+    <string name="stop_recording">Stop</string>
+    <string name="audio_format">Format</string>
+
+</resources>
